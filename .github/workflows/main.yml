@@ -18,6 +18,11 @@ jobs:
       with:
         node-version: '14'
 
+    - name: Clean up extraheader
+      run: |
+        git config --global --unset-all http.https://github.com/.extraheader
+        git submodule foreach --recursive git config --local --unset-all http.https://github.com/.extraheader
+
     - name: Install dependencies
       run: npm install
 
@@ -29,8 +34,3 @@ jobs:
       with:
         name: build
         path: build/
-        
-    - name: Clean up extraheader
-      run: |
-        git config --global --unset-all http.https://github.com/.extraheader
-        git submodule foreach --recursive git config --local --unset-all http.https://github.com/.extraheader
