@@ -25,7 +25,12 @@ jobs:
       run: npm run build
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v4  # Update the version here
+      uses: actions/upload-artifact@v4
       with:
         name: build
         path: build/
+        
+    - name: Clean up extraheader
+      run: |
+        git config --global --unset-all http.https://github.com/.extraheader
+        git submodule foreach --recursive git config --local --unset-all http.https://github.com/.extraheader
