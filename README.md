@@ -1,24 +1,23 @@
 # HELPER TO-DO
------------------
 
 A simple and efficient task management application built with React and Vite and deployed on github pages  by Suryansu sanjeebani Mohanty.
 
 ## Features:-
 
--✅Add, edit, and delete tasks 
--📝Mark Task as completed or incomplete.
--🔄Fileter completed tasks.
--💾Presistent storage using the localStorage.
+-✅Add, edit, and delete tasks<br>
+-📝Mark Task as completed or incomplete.<br>
+-🔄Fileter completed tasks.<br>
+-💾Presistent storage using the localStorage.<br>
 -📱Responsive degine 
 
 ## Tech stacks used:-
 
--React
--Vite 
--Tailwind css 
--UUID for unique IDs
--React icons 
--Github pages for deployment
+-React<br>
+-Vite <br>
+-Tailwind css <br>
+-UUID for unique IDs<br>
+-React icons <br>
+-Github pages for deployment<br>
 
 ## Pre-requisites:- 
 
