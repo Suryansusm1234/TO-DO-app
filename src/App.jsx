@@ -108,6 +108,7 @@ function App() {
 					
 				</div>
 			</div>
+      <h3 className="text-center text-2xl text-white">***Made by suryansu***</h3>
 		</>
 	);
 }
