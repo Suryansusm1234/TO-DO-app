@@ -8,7 +8,7 @@ function Navbar() {
         <div>
 
         <img className='max-w-20 inline ' src={image} alt="" />
-        <span className='p-10 font-semibold'>Healper- A light TO-DO</span>
+        <span className='p-10 font-semibold'>Helper- A light TO-DO</span>
         </div>
       <nav className=' flex justify-items-center all-center gap-6 p-20 '>
       
