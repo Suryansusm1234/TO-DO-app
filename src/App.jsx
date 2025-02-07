@@ -22,14 +22,16 @@ function App() {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 	const HandleEdit = (e) => {
-    let id = e.target.name
+    e.stopPropagation();
+    const id = e.currentTarget.getAttribute('name');
     let t = todos.find(items=>items.id === id)
     settodo(t.todo) 
     let newtodos = todos.filter(items=>items.id !== id)
     settodos(newtodos)
   };
 	const HandleDelete = (e) => {
-    let id = e.target.name
+    e.stopPropagation();
+    const id = e.currentTarget.getAttribute('name');
     let newtodos = todos.filter(items=>items.id !== id)
     settodos(newtodos)
    
